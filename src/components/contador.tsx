@@ -5,18 +5,23 @@ import { useState } from 'react';
 function Contador() {
     const [count, setCount] = useState(0);
 
-    const contando = () => {
+    const aumentando = () => {
         setCount (count + 1);
     };
+
+    const diminuindo = () => {
+        setCount (count - 1);
+    };
+
   
     return (
       <div>
         {count}<br />
-        <button onClick={contando}>
+        <button onClick={aumentando}>
           aumentando
         </button>
   
-      <button onClick={contando}>
+      <button onClick={diminuindo}>
         diminuindo
       </button>
     </div>

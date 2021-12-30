@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
-import Contador from './components/contador';
-
+import CounterProps from './components/Counter';
+import Clock from './components/Clock';
+import Todos from './components/Todos';
+import NameInput from './components/NameInput';
 
 function App() {
   return (
     <div className="App">
-      <Contador />
+        <NameInput />
+      <CounterProps initialValue ={1} />
+      <Clock />
+      <h1>Todos:</h1>
+      <Todos />
     </div>
   );
 }
